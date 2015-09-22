@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin_vertical"
+    android:layout_marginLeft="@dimen/card_margin_horizontal"
+    android:layout_marginRight="@dimen/card_margin_horizontal"
+    android:layout_marginTop="@dimen/card_margin_vertical"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/store_background"
+                android:transitionName="trans_store_background"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/cardview_img_height"
+                android:layout_marginBottom="@dimen/cardview_img_bottom_margin"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_bengawansolo" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/take_picture"
+                android:transitionName="trans_take_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/cardview_float_btn_margin"
+                android:src="@drawable/ic_camera_white_24dp"
+                app:fabSize="normal"
+                app:layout_anchor="@id/store_background"
+                app:layout_anchorGravity="bottom|right|end" />
+
+            <cus.view.RoundedImageView
+                android:id="@+id/bg_white"
+                android:layout_width="@dimen/circle_img_size"
+                android:layout_height="@dimen/circle_img_size"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_white"
+                app:layout_anchor="@id/store_background"
+                app:layout_anchorGravity="bottom|center" />
+
+            <cus.view.RoundedImageView
+                android:id="@+id/store_icon"
+                android:layout_width="@dimen/circle_img_size"
+                android:layout_height="@dimen/circle_img_size"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mer_bengawansolo"
+                app:civ_border="true"
+                app:civ_borderColor="@android:color/white"
+                app:civ_borderWidth="2dp"
+                app:layout_anchor="@id/store_background"
+                app:layout_anchorGravity="bottom|center" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/store_favorite"
+                android:transitionName="trans_store_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardview_float_btn_margin"
+                android:src="@drawable/ic_favorite_white_24dp"
+                app:backgroundTint="@color/my_yellow"
+                app:fabSize="normal"
+                app:layout_anchor="@id/store_background"
+                app:layout_anchorGravity="bottom|left|end" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="0dp"
+            app:layout_anchor="@id/store_background">
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bengawan Solo Cafe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/my_primary" />
+
+            <TextView
+                android:id="@+id/store_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bengawan Solo Coffee is a truly home grown coffee chain, initiated for a simple reason based on our years of experience in selecting high quality Indonesian Arabica and Robusta coffee beans."
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

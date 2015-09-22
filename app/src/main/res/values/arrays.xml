@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="merchant_promo_tab_menu">
+        <item>Recent</item>
+        <item>My Place</item>
+        <item>Popular</item>
+        <item>Near Me</item>
+        <item>New Promo</item>
+    </string-array>
+    <array name="merchant_promo_tab_menu_ic">
+        <item>@drawable/ic_timelapse_white_24dp</item>
+        <item>@drawable/ic_favorite_white_24dp</item>
+        <item>@drawable/ic_mood_white_24dp</item>
+        <item>@drawable/ic_nature_people_white_24dp</item>
+        <item>@drawable/ic_new_releases_white_24dp</item>
+    </array>
+    <string-array name="mv_mark_colors">
+        <item>#D50000</item>
+        <item>#FF6D00</item>
+        <item>#FFD600</item>
+        <item>#8BC34A</item>
+        <item>#8DDF2E</item>
+    </string-array>
+</resources>

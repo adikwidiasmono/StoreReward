@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_1"
+            android:checked="true"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="My Account"/>
+        <item
+            android:id="@+id/nav_menu_2"
+            android:icon="@drawable/ic_keyboard_black_24dp"
+            android:title="How to use"/>
+
+        <item
+            android:id="@+id/nav_menu_3"
+            android:icon="@drawable/ic_toys_black_24dp"
+            android:title="About application"/>
+
+        <item
+            android:id="@+id/nav_menu_4"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout"/>
+        <!-- item
+            android:id="@+id/section"
+            android:title="Group Menu">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_menu_4"
+                    android:icon="@drawable/ic_label_outline_black"
+                    android:title="Sub Menu 1"/>
+                <item
+                    android:id="@+id/nav_menu_5"
+                    android:icon="@drawable/ic_label_outline_black"
+                    android:title="Sub Menu 2"/>
+                <item
+                    android:id="@+id/nav_menu_6"
+                    android:icon="@drawable/ic_label_outline_black"
+                    android:title="Sub Menu 3"/>
+                </group>
+            </menu>
+        </item -->
+    </group>
+
+</menu>
